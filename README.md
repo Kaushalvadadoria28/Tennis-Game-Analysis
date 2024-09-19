@@ -17,6 +17,16 @@ This project focuses on analyzing tennis matches by tracking player and ball mov
 - Python: Main programming language for model implementation.
 - PyTorch: (Specify which) used for building and training the CNN models.
 
+## Models Used
+
+* YOLO v8 for player detection
+* Fine Tuned YOLO for tennis ball detection
+* Court Key point extraction
+
+* Trained YOLOV5 model: https://drive.google.com/file/d/1UZwiG1jkWgce9lNhxJ2L0NVjX1vGM05U/view?usp=sharing
+* Trained tennis court key point model: https://drive.google.com/file/d/1QrTOF1ToQ4plsSZbkBs3zOLkVt3MBlta/view?usp=sharing
+
+
 ## Installation
 
 1. Clone the repository:
@@ -35,7 +45,18 @@ This project focuses on analyzing tennis matches by tracking player and ball mov
 4. Set up the environment:
 
     - Ensure OpenCV, YOLO, and CNN models are properly set up and configured in your environment.
+      
+5. Training
 
+      * Tennis ball detetcor with YOLO: training/tennis_ball_detector_training.ipynb
+      * Tennis court keypoint with Pytorch: training/tennis_court_keypoints_training.ipynb
+
+## Output Videos
+
+Here is a screenshot from one of the output videos:
+
+![Screenshot (418)](https://github.com/user-attachments/assets/a816650f-ce16-42cf-8eb8-d4e0f9856401)
+  
 ## Future Enhancements
 
 - Adding real-time match statistics and player performance summaries.
